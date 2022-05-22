@@ -1,42 +1,19 @@
-document.querySelector('button').onclick = myClick;
+var names = prompt('как тебя зовут, лохматая?', '');
+
+alert('тебя зовут ' + names + ' ахахахахах, ебать ты жертва аборта, я в шоках');
+
+var surname = prompt('а фамилия то есть вообще? лохматая ' + names + ' ?', '');
+
+alert('мм, ' + surname + ' пхах, капец');
+
+var years = prompt('а годиков сколько тебе ' + names + ' ' + surname + ' ?', '');
+
+alert('omg, ' + surname + ' ' + names + ' давай, одевай подгузник и спать ложись, малолетняя тварина)))');
 
 
-
-
-
-
-
-
-
-
-
-
-
-function myClick() {
-	let str = document.querySelector('.input').value;
-	let findA = str.match(/а/gi);
-	let findMOM = str.match(/мом/gi);
-	let resA = findA.length;
-	let resMOM = findMOM.length;
-	alert('я нашёл ' + resA + ' букв "А" и ' + resMOM + ' слогов "МОМ"');
-
-
-};
-
-(function () {
-	document.querySelector('.input').addEventListener('keydown', function (e) {
-		if (e.keyCode === 13) {
-			console.log(this.value);
-			let str = document.querySelector('.input').value;
-			let findA = str.match(/а/gi);
-			let findMOM = str.match(/мом/gi);
-			let resA = findA.length;
-			let resMOM = findMOM.length;
-			alert('я нашёл ' + resA + ' букв "А" и ' + resMOM + ' слогов "МОМ"');
-		}
-	});
-})();
-
-
-
-
+var mom = confirm("мать жива?");
+if (mom == true) {
+	alert('пиздабол');
+} else {
+	alert('неужели сдохла, ой-ой-ой, жаль конеш');
+}

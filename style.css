@@ -4,44 +4,89 @@
 	box-sizing: border-box;
 }
 
-body {
-	background-color: aquamarine;
-}
-
-.form {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
+.btn {
+	margin-top: 40px;
 	text-align: center;
-	background-color: rgb(190, 190, 164);
-	padding: 100px 15px;
-
 }
 
-.form button {
-	display: block;
-	width: 150px;
-	margin: 0 auto;
-	padding: 15px;
+.btn a {
+	font-family: arial;
+	background-color: rebeccapurple;
+	padding: 20px 50px;
 	border-radius: 10px;
-	outline: none;
 	text-decoration: none;
-	border: #fff;
-	background-color: salmon;
-	cursor: pointer;
-	margin-top: 30px;
+	color: azure;
 }
 
-input {
-	width: 600px;
-	height: 250px;
-	margin: 0 auto;
+.popup {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, .7);
+	z-index: 2;
+}
+
+.popup_container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.popup_body {
+	margin: auto;
+	width: 500px;
+	background-color: #fff;
+	border-radius: 10px;
+	text-align: center;
+	padding: 100px 15px 110px 15px;
+	position: relative;
+}
+
+.popup_body p {
+	font-size: 28px;
+	font-family: arial;
+	font-weight: 600;
+	color: aquamarine;
+	margin-bottom: 40px;
+}
+
+.popup_body input {
+	display: block;
+	margin: 25px auto 0 auto;
+	width: 330px;
 	padding: 17px 20px;
-	background-color: #e5e5e5;
+	background-color: #e2e2e2;
 	border-radius: 10px;
 	border: none;
 	font-family: arial;
 	font-size: 18px;
-	color: burlywood;
+	color: #000;
+}
+
+.popup_body input:focus {
 	outline: none;
+}
+
+.popup_body button {
+	cursor: pointer;
+	display: block;
+	width: 330px;
+	margin: 60px auto 0 auto;
+	padding: 20px 0;
+	font-family: arial;
+	font-size: 16px;
+	border: none;
+	color: #fff;
+	border-radius: 10px;
+	background-color: burlywood;
+}
+
+.popup_close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 21px;
+	cursor: pointer;
 }
